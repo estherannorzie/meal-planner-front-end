@@ -30,7 +30,7 @@ struct LoginScreenView: View {
                     
                     TextField("Email", text: $email)
                         .padding()
-                        .frame(width: 300, height: 50)
+                        .frame(width: 200, height: 50)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
@@ -43,6 +43,10 @@ struct LoginScreenView: View {
                     .background(Color.red)
                     .cornerRadius(25)
                     
+                    Text("Create an account")
+                        .bold()
+                        .padding()
+//                    NavigationLink()
                 }
             }
         }

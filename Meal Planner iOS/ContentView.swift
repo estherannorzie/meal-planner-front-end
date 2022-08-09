@@ -17,7 +17,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
             Button("Get Started") {
-                NavigationLink()
+//                NavigationLink()
             }
             .padding()
             .foregroundColor(.white)
