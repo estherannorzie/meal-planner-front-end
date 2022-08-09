@@ -16,6 +16,14 @@ struct ContentView: View {
             Text("Never struggle planning your meals ever again!")
                 .font(.largeTitle)
                 .multilineTextAlignment(.center)
+            Button("Get Started") {
+                NavigationLink()
+            }
+            .padding()
+            .foregroundColor(.white)
+            .frame(width: 200, height: 50)
+            .background(Color.red)
+            .cornerRadius(25)
         }
     }
 }

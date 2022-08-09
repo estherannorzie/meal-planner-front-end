@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EB9A099528A18F6D00EEE4A6 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A099428A18F6D00EEE4A6 /* LoginScreenView.swift */; };
+		EB9A099928A1D24700EEE4A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A099828A1D24700EEE4A6 /* User.swift */; };
+		EB9A099B28A1D2A200EEE4A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A099A28A1D2A200EEE4A6 /* Network.swift */; };
 		EBA1AF3D28A06F2C00855A62 /* Meal_Planner_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1AF3C28A06F2C00855A62 /* Meal_Planner_iOSApp.swift */; };
 		EBA1AF3F28A06F2C00855A62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1AF3E28A06F2C00855A62 /* ContentView.swift */; };
 		EBA1AF4128A06F3400855A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBA1AF4028A06F3400855A62 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		EB9A099428A18F6D00EEE4A6 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		EB9A099828A1D24700EEE4A6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB9A099A28A1D2A200EEE4A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		EBA1AF3928A06F2C00855A62 /* Meal Planner iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Planner iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA1AF3C28A06F2C00855A62 /* Meal_Planner_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_Planner_iOSApp.swift; sourceTree = "<group>"; };
 		EBA1AF3E28A06F2C00855A62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				EBA1AF3C28A06F2C00855A62 /* Meal_Planner_iOSApp.swift */,
 				EBA1AF3E28A06F2C00855A62 /* ContentView.swift */,
 				EB9A099428A18F6D00EEE4A6 /* LoginScreenView.swift */,
+				EB9A099828A1D24700EEE4A6 /* User.swift */,
+				EB9A099A28A1D2A200EEE4A6 /* Network.swift */,
 				EBA1AF4028A06F3400855A62 /* Assets.xcassets */,
 				EBA1AF4228A06F3400855A62 /* Preview Content */,
 			);
@@ -260,8 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9A099B28A1D2A200EEE4A6 /* Network.swift in Sources */,
 				EBA1AF3F28A06F2C00855A62 /* ContentView.swift in Sources */,
 				EB9A099528A18F6D00EEE4A6 /* LoginScreenView.swift in Sources */,
+				EB9A099928A1D24700EEE4A6 /* User.swift in Sources */,
 				EBA1AF3D28A06F2C00855A62 /* Meal_Planner_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

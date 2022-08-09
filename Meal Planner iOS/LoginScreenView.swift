@@ -11,15 +11,17 @@ struct LoginScreenView: View {
     @State private var username = ""
     @State private var email = ""
     @State private var showLoginScreen = false
+    
+    
     var body: some View {
         NavigationView {
             ZStack {
                 Color.red
                     .ignoresSafeArea()
-                
                 RoundedRectangle(cornerRadius: 25)
                     .scale(0.8)
                     .foregroundColor(.white)
+                
                 VStack {
                     Text("Login")
                         .font(.largeTitle)
@@ -35,23 +37,17 @@ struct LoginScreenView: View {
                     Button("Login") {
                         
                     }
+                    .padding()
                     .foregroundColor(.white)
-                    .frame(width: 300, height: 50)
+                    .frame(width: 200, height: 50)
                     .background(Color.red)
                     .cornerRadius(25)
                     
-                    NavigationLink(destination: Text("Welcome @\(username)"), isActive: $showLoginScreen) {
-                        EmptyView()
-                    }
                 }
             }
-            .navigationBarHidden(true)
         }
     }
     
-    func authenticateUser(username: String) {
-        
-    }
 }
 
 struct LoginScreenView_Previews: PreviewProvider {
