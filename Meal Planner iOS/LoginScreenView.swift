@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginScreenView: View {
     @State private var username = ""
     @State private var email = ""
+    @State private var password = ""
     @State private var showLoginScreen = false
     
     
@@ -23,12 +24,18 @@ struct LoginScreenView: View {
                     .foregroundColor(.white)
                 
                 VStack {
-                    Text("Login")
+                    Text("Welcome!")
                         .font(.largeTitle)
                         .bold()
                         .padding()
                     
                     TextField("Email", text: $email)
+                        .padding()
+                        .frame(width: 200, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                    SecureField("Password", text: $password)
                         .padding()
                         .frame(width: 200, height: 50)
                         .background(Color.black.opacity(0.05))
