@@ -55,6 +55,7 @@ struct LoginScreenView: View {
                         .padding()
 //                    NavigationLink()
                 }
+                .navigationTitle("Meal Planner")
             }
         }
     }
