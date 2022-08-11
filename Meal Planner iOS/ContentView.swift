@@ -21,10 +21,6 @@ struct ContentView: View {
                 Text("Never struggle planning your meals ever again!")
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
-                
-                NavigationLink(destination: LoginScreenView(), isActive: self.$isActive) {
-                        Text("")
-                    }
 
                     Button("Get Started"){
                         self.isActive = true
@@ -34,6 +30,10 @@ struct ContentView: View {
                     .frame(width: 200, height: 50)
                     .background(Color.red)
                     .cornerRadius(25)
+                
+                NavigationLink(destination: LoginScreenView(), isActive: self.$isActive) {
+                        Text("")
+                    }
                 }
             }
         }

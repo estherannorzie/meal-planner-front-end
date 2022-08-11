@@ -11,10 +11,9 @@ struct LoginScreenView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var showLoginScreen = false
-    
+    @State var isActive: Bool = false
     
     var body: some View {
-        NavigationView {
             ZStack {
                 Color.red
                     .ignoresSafeArea()
@@ -40,26 +39,23 @@ struct LoginScreenView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    Button("Login") {
-                        
-                    }
+                    Button("Login") {}
                     .padding()
                     .foregroundColor(.white)
                     .frame(width: 200, height: 50)
                     .background(Color.red)
                     .cornerRadius(25)
                     
-                    Text("Create an account")
-                        .bold()
-                        .padding()
-//                    NavigationLink()
+                    NavigationLink(destination: SignUpView(), isActive: self.$isActive) {
+                        Text("New? Sign Up")
+                            .bold()
+                            .padding()
+                        }
                 }
-                .navigationTitle("Meal Planner")
+                .navigationBarTitle("Meal Planner iOS", displayMode: .inline)
             }
         }
     }
-    
-}
 
 struct LoginScreenView_Previews: PreviewProvider {
     static var previews: some View {

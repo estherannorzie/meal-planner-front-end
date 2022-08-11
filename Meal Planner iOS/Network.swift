@@ -10,12 +10,12 @@ import Foundation
 class MealPlannerAPIManager: ObservableObject {
     let baseURL = "https://meal-planner-ios-back-end.herokuapp.com/"
     
-    func getAllUsers() async throws -> [User] {
+    func getUsers() async throws -> [User] {
         // Ensure the URL is valid
         guard let url = URL(
             string: "\(baseURL)users")
         else {
-            fatalError("Missing URL")
+            fatalError("Missing or invalid URL.")
         }
 
         // Make the GET request
@@ -25,7 +25,7 @@ class MealPlannerAPIManager: ObservableObject {
         // Check the response was successful
         guard (response as? HTTPURLResponse)?.statusCode == 200
         else {
-            fatalError("Error while fetching data")
+            fatalError("Error while fetching data.")
         }
         
         // Transform the data from the network response
