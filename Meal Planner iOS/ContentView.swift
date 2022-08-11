@@ -22,7 +22,7 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
                 
-                NavigationLink(destination: Text("Let's get started!"), isActive: self.$isActive) {
+                NavigationLink(destination: LoginScreenView(), isActive: self.$isActive) {
                         Text("")
                     }
 
