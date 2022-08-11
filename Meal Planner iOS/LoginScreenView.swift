@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct LoginScreenView: View {
+    @StateObject public var apiManager = MealPlannerAPIManager()
     @State private var email = ""
     @State private var password = ""
-    @State private var showLoginScreen = false
+//    @State private var showLoginScreen = false
     @State var isActive: Bool = false
+    @State private var isLoggedIn = false
+    @State public var user: User?
     
     var body: some View {
+        if !isLoggedIn {
             ZStack {
                 Color.red
                     .ignoresSafeArea()
@@ -39,7 +43,21 @@ struct LoginScreenView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    Button("Login") {}
+                    Button("Login") {
+                        Task {
+                            do {
+                                let users = try await apiManager.getUsers()
+                                let filteredUsers = users.filter { $0.email == email }
+                                if !filteredUsers.isEmpty {
+                                    user = filteredUsers[0]
+                                }
+                                isLoggedIn = true
+                                
+                            } catch {
+                                print("There was an \(error)")
+                            }
+                        }
+                    }
                     .padding()
                     .foregroundColor(.white)
                     .frame(width: 200, height: 50)
@@ -54,8 +72,12 @@ struct LoginScreenView: View {
                 }
                 .navigationBarTitle("Meal Planner iOS", displayMode: .inline)
             }
+            .environmentObject(apiManager)
+        } else {
+            UserHomeView()
         }
     }
+}
 
 struct LoginScreenView_Previews: PreviewProvider {
     static var previews: some View {
