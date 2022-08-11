@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LoginScreenView: View {
-    @State private var username = ""
     @State private var email = ""
     @State private var password = ""
     @State private var showLoginScreen = false
