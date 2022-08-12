@@ -1,0 +1,36 @@
+[
+    {
+        "meal_plans": [
+            {
+                "user_id": 1,
+                "id": 1,
+                "title": "Raw strawberries",
+                "type": 4,
+                "calories": 50,
+                "date": "Fri, 1 Jan 2023 00:00:00 GMT"
+            }
+        ],
+        "id": 1,
+        "email": "MaeWalls848456@hotmail.com",
+        "first_name": "Mae",
+        "last_name": "Walls",
+        "password": "s9Ajs&l83",
+        "username": "Readerenes"
+    },
+    {
+        "id": 2,
+        "email": "KatrinaBurnett5875898@mail.com",
+        "first_name": "Katrina",
+        "last_name": "Burnett",
+        "password": "{+\AN]M9f.I",
+        "username": "Dissensli"
+    },
+    {
+        "id": 3,
+        "email": "GloriaMccoy543687@mail.com",
+        "first_name": "Gloria",
+        "last_name": "Mccoy",
+        "password": "fFi$Jstp_",
+        "username": "TinkerChic"
+    }
+]
