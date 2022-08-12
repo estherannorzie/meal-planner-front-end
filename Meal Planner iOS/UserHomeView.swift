@@ -4,11 +4,10 @@
 //
 //  Created by Esther Annorzie on 8/11/22.
 //
-
 import SwiftUI
 
 struct UserHomeView: View {
-   
+    @Binding var user: User
     var body: some View {
         Text("Hello, username!")
     }
@@ -16,6 +15,6 @@ struct UserHomeView: View {
 
 struct UserHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        UserHomeView()
+        UserHomeView(user: .constant(previewUsers[0]))
     }
 }

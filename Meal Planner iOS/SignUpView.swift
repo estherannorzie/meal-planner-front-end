@@ -4,7 +4,6 @@
 //
 //  Created by Esther Annorzie on 8/11/22.
 //
-
 import SwiftUI
 
 struct SignUpView: View {

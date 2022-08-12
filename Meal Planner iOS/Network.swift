@@ -38,4 +38,3 @@ class MealPlannerAPIManager: ObservableObject {
         return decodedData
     }
 }
-
