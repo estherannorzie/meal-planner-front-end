@@ -18,8 +18,6 @@
 		EBA1AF5828A06F3500855A62 /* Meal_Planner_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1AF5728A06F3500855A62 /* Meal_Planner_iOSUITests.swift */; };
 		EBA1AF5A28A06F3500855A62 /* Meal_Planner_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1AF5928A06F3500855A62 /* Meal_Planner_iOSUITestsLaunchTests.swift */; };
 		EBAE6D4728A460A90043E7FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAE6D4628A460A90043E7FD /* User.swift */; };
-		EBC4661528A5A4A600481B13 /* testData.json in Resources */ = {isa = PBXBuildFile; fileRef = EBC4661428A5A4A600481B13 /* testData.json */; };
-		EBC4661728A5A4BD00481B13 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4661628A5A4BD00481B13 /* File.swift */; };
 		EBE22E4128A5767D00E89494 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE22E4028A5767D00E89494 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +53,6 @@
 		EBA1AF5728A06F3500855A62 /* Meal_Planner_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_Planner_iOSUITests.swift; sourceTree = "<group>"; };
 		EBA1AF5928A06F3500855A62 /* Meal_Planner_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal_Planner_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EBAE6D4628A460A90043E7FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		EBC4661428A5A4A600481B13 /* testData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testData.json; sourceTree = SOURCE_ROOT; };
-		EBC4661628A5A4BD00481B13 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		EBE22E4028A5767D00E89494 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,8 +121,6 @@
 		EBA1AF4228A06F3400855A62 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				EBC4661428A5A4A600481B13 /* testData.json */,
-				EBC4661628A5A4BD00481B13 /* File.swift */,
 				EBA1AF4328A06F3400855A62 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -260,7 +254,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC4661528A5A4A600481B13 /* testData.json in Resources */,
 				EBA1AF4428A06F3400855A62 /* Preview Assets.xcassets in Resources */,
 				EBA1AF4128A06F3400855A62 /* Assets.xcassets in Resources */,
 			);
@@ -292,7 +285,6 @@
 				EB9A099528A18F6D00EEE4A6 /* LoginScreenView.swift in Sources */,
 				EBE22E4128A5767D00E89494 /* SignUpView.swift in Sources */,
 				EBAE6D4728A460A90043E7FD /* User.swift in Sources */,
-				EBC4661728A5A4BD00481B13 /* File.swift in Sources */,
 				EB7728F228A4BD2100F7B87D /* UserHomeView.swift in Sources */,
 				EBA1AF3D28A06F2C00855A62 /* Meal_Planner_iOSApp.swift in Sources */,
 			);

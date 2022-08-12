@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    var API = MealPlannerAPIManager()
     @State var users: [User] = []
     @State var isActive: Bool = false
     
