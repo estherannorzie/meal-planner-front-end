@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct UserHomeView: View {
+struct UserView: View {
     @Binding var user: User
     var body: some View {
         NavigationView {
@@ -38,8 +38,8 @@ struct UserHomeView: View {
     }
 }
 
-struct UserHomeView_Previews: PreviewProvider {
+struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        UserHomeView(user: .constant(previewUsers[0]))
+        UserView(user: .constant(previewUsers[0]))
     }
 }

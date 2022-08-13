@@ -76,7 +76,7 @@ struct LoginScreenView: View {
         } else {
             
             if let binding = Binding<User>($user) {
-                UserHomeView(user: binding)
+                UserView(user: binding)
             }
         }
     }

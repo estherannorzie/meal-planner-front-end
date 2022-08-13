@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB36009328A6D86400CBFA54 /* modelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36009228A6D86300CBFA54 /* modelData.swift */; };
 		EB36009528A6D90200CBFA54 /* userData.json in Resources */ = {isa = PBXBuildFile; fileRef = EB36009428A6D90200CBFA54 /* userData.json */; };
-		EB7728F228A4BD2100F7B87D /* UserHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7728F128A4BD2100F7B87D /* UserHomeView.swift */; };
+		EB7728F228A4BD2100F7B87D /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7728F128A4BD2100F7B87D /* UserView.swift */; };
 		EB9A099528A18F6D00EEE4A6 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A099428A18F6D00EEE4A6 /* LoginScreenView.swift */; };
 		EB9A099B28A1D2A200EEE4A6 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9A099A28A1D2A200EEE4A6 /* Network.swift */; };
 		EBA1AF3D28A06F2C00855A62 /* Meal_Planner_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA1AF3C28A06F2C00855A62 /* Meal_Planner_iOSApp.swift */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		EB36009228A6D86300CBFA54 /* modelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelData.swift; sourceTree = "<group>"; };
 		EB36009428A6D90200CBFA54 /* userData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = userData.json; path = "Meal Planner iOS/Preview Content/userData.json"; sourceTree = SOURCE_ROOT; };
-		EB7728F128A4BD2100F7B87D /* UserHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeView.swift; sourceTree = "<group>"; };
+		EB7728F128A4BD2100F7B87D /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		EB9A099428A18F6D00EEE4A6 /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
 		EB9A099A28A1D2A200EEE4A6 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		EBA1AF3928A06F2C00855A62 /* Meal Planner iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meal Planner iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,7 +120,7 @@
 				EBE22E4028A5767D00E89494 /* SignUpView.swift */,
 				EBA1AF3E28A06F2C00855A62 /* ContentView.swift */,
 				EB9A099428A18F6D00EEE4A6 /* LoginScreenView.swift */,
-				EB7728F128A4BD2100F7B87D /* UserHomeView.swift */,
+				EB7728F128A4BD2100F7B87D /* UserView.swift */,
 				EBD16D6B28A8689F00367FCB /* HomeView.swift */,
 				EBD16D6528A85B7600367FCB /* CreateMealPlanView.swift */,
 				EBD16D6928A85D3C00367FCB /* ViewMealPlansView.swift */,
@@ -299,7 +299,7 @@
 				EBD16D6A28A85D3C00367FCB /* ViewMealPlansView.swift in Sources */,
 				EBD16D6828A85D1600367FCB /* SettingsView.swift in Sources */,
 				EB36009328A6D86400CBFA54 /* modelData.swift in Sources */,
-				EB7728F228A4BD2100F7B87D /* UserHomeView.swift in Sources */,
+				EB7728F228A4BD2100F7B87D /* UserView.swift in Sources */,
 				EBD16D6C28A8689F00367FCB /* HomeView.swift in Sources */,
 				EBD16D6628A85B7600367FCB /* CreateMealPlanView.swift in Sources */,
 				EBA1AF3D28A06F2C00855A62 /* Meal_Planner_iOSApp.swift in Sources */,

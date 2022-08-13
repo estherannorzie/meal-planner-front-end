@@ -12,14 +12,6 @@ struct SignUpView: View {
     
     var body: some View {
         Text("Hello, username!")
-            .task{
-                do {
-                    users = try await apiManager.getUsers()
-                    print(users)
-                } catch {
-                    print("There was an \(error)")
-                }
-            }
     }
 }
 
