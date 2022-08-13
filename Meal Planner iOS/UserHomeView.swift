@@ -11,6 +11,11 @@ struct UserHomeView: View {
     var body: some View {
         NavigationView {
             TabView {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
                 CreateMealPlanView()
                     .tabItem {
                         Image(systemName: "plus.circle")
@@ -19,9 +24,15 @@ struct UserHomeView: View {
                 ViewMealPlansView()
                     .tabItem {
                         Image(systemName: "eyes.inverse")
-                        Text("View Meal Plans")
+                        Text("My Meal Plans")
+                    }
+                SettingsView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("User Settings")
                     }
             }
+            .accentColor(.red)
         }
         .navigationBarTitle("Hello, \(user.username)!", displayMode: .inline)
     }
