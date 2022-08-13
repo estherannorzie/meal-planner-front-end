@@ -10,7 +10,18 @@ struct UserHomeView: View {
     @Binding var user: User
     var body: some View {
         NavigationView {
-            
+            TabView {
+                CreateMealPlanView()
+                    .tabItem {
+                        Image(systemName: "plus.circle")
+                        Text("New Meal Plan")
+                    }
+                ViewMealPlansView()
+                    .tabItem {
+                        Image(systemName: "eyes.inverse")
+                        Text("View Meal Plans")
+                    }
+            }
         }
         .navigationBarTitle("Hello, \(user.username)!", displayMode: .inline)
     }
