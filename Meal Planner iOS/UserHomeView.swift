@@ -9,7 +9,7 @@ import SwiftUI
 struct UserHomeView: View {
     @Binding var user: User
     var body: some View {
-        Text("Hello, username!")
+        Text("Hello, \(user.username)!")
     }
 }
 

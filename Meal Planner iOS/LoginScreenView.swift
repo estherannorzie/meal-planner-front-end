@@ -47,7 +47,7 @@ struct LoginScreenView: View {
                         Task {
                             do {
                                 let users = try await apiManager.getUsers()
-                                let filteredUsers = users.filter { $0.email == email }
+                                let filteredUsers = users.filter { $0.email == email && $0.password == password }
                                 if !filteredUsers.isEmpty {
                                     user = filteredUsers[0]
                                 }
