@@ -37,4 +37,8 @@ class MealPlannerAPIManager: ObservableObject {
         
         return decodedData
     }
+    
+//    func getUserMealPlans() async throws [MealPlan] {
+//
+//    }
 }
