@@ -16,7 +16,7 @@ struct UserView: View {
                         Image(systemName: "house.fill")
                         Text("Home")
                     }
-                CreateMealPlanView()
+                CreateMealPlanView(user: $user)
                     .tabItem {
                         Image(systemName: "plus.circle")
                         Text("New Meal Plan")
@@ -26,7 +26,7 @@ struct UserView: View {
                         Image(systemName: "eyes.inverse")
                         Text("My Meal Plans")
                     }
-                SettingsView()
+                SettingsView(user: $user)
                     .tabItem {
                         Image(systemName: "person")
                         Text("User Settings")
