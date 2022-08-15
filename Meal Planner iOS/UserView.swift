@@ -21,7 +21,7 @@ struct UserView: View {
                         Image(systemName: "plus.circle")
                         Text("New Meal Plan")
                     }
-                ViewMealPlansView()
+                ViewMealPlansView(user: $user)
                     .tabItem {
                         Image(systemName: "eyes.inverse")
                         Text("My Meal Plans")

@@ -74,9 +74,9 @@ struct LoginScreenView: View {
             }
             .environmentObject(apiManager)
         } else {
-            
             if let binding = Binding<User>($user) {
                 UserView(user: binding)
+                .environmentObject(apiManager)
             }
         }
     }

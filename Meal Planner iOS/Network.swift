@@ -12,8 +12,7 @@ class MealPlannerAPIManager: ObservableObject {
     
     func getUsers() async throws -> [User] {
         // Ensure the URL is valid
-        guard let url = URL(
-            string: "\(baseURL)users")
+        guard let url = URL(string: "\(baseURL)users")
         else {
             fatalError("Missing or invalid URL.")
         }
@@ -37,4 +36,11 @@ class MealPlannerAPIManager: ObservableObject {
         
         return decodedData
     }
+    
+//    func getUserMealPlans() async throws -> [MealPlan] {
+//        guard let url = URL(string: "\(baseURL)\(user.id)")
+//        else {
+//            fatalError("Missing or invalid URL.")
+//        }
+//    }
 }
