@@ -11,7 +11,6 @@ struct LoginScreenView: View {
     @StateObject public var apiManager = MealPlannerAPIManager()
     @State private var email = ""
     @State private var password = ""
-//    @State private var showLoginScreen = false
     @State var isActive: Bool = false
     @State private var isLoggedIn = false
     @State public var user: User? = nil
